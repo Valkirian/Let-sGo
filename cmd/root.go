@@ -29,13 +29,10 @@ var cfgFile string
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "LetsGo",
-	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Short: "Tool for network scanning, check ports and services",
+	Long: `Let's Go is a tool written in Go by Rachid Moyse Polania with 
+the purpose of automating the reconnaissance process in hacking, it 
+will serve as a network scanner, discover ports and test exposed services.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
