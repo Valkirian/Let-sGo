@@ -20,6 +20,8 @@ var domainfindercmd = &cobra.Command{
 	Long: "Tool for subdomain enumeration using a wordlist",
 	Run: func (cmd *cobra.Command, args []string) {
 		res := SubdomainFinder(wordlist_path, domain)
-		fmt.Println(res)
+		for _, subdomains := range res {
+			fmt.Println(subdomains)
+		}
 	},
 }
