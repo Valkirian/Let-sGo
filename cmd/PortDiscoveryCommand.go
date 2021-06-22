@@ -19,7 +19,7 @@ func init() {
 
 var portdiscoverycmd = &cobra.Command {
 	Use: "portdiscovery",
-	Short: "Do a Port Discoverty",
+	Short: "Do a Port Discovery",
 	Long: `Do a Port Discovery over TCP network against you host and ports`,
 	Run: func (cmd *cobra.Command, args []string) {
 		res, err := PortDiscover(host, ports...)
